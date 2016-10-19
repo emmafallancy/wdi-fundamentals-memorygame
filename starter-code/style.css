@@ -2,6 +2,9 @@
 comment. Add your CSS code
 from Unit 1 - 5 below  */
 
+/* Some styling added for the scoreboard message */
+/* Emmanuel 19102016 */
+
 h1 {
 	color: rgb(2, 132, 130);
 }
@@ -10,8 +13,43 @@ h2 {
 	color: #ffd700;
 }
 
+button {
+	background: #3498db;
+	font-size: 20px;
+	font-family: Arial;
+	color: white;
+}
+
+footer {
+	text-align: center;
+	background-color: #808080;
+}
+
+nav {
+	background-color: #808080;
+}
+
+nav a {
+	background-color: #ffbf00;
+	color: white;
+	padding: 35px;
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #ee5f3c;
+}
+
 h1, h2, p {
 	text-align: center;
+}
+
+div h2 {
+	text-align: left;
+	color: #3498db;
+	font-family: Arial;
 }
 
 .board {
@@ -30,29 +68,20 @@ h1, h2, p {
 	margin: 8%;
 }
 
-footer {
-	text-align: center;
-	background-color: #808080;
+.scoreboard {
+	height: 50%;
+	width: 50%;
+	float: right;
+	padding: 25px 0px;
+}
+
+.buttonsection {
+	width: 50%;
+	height: 50%;
 }
 
 .name {
 	color: #ff0000;
-}
-
-nav {
-	background-color: #808080;
-}
-
-nav a {
-	background-color: #ffbf00;
-	color: white;
-	padding: 35px;
-	display: block;
-	float: left;
-}
-
-nav a:hover {
-	background-color: #ee5f3c;
 }
 
 .clearfix:after {
@@ -62,4 +91,11 @@ nav a:hover {
     clear: both;
     height: 0;
     font-size: 0;
+}
+
+.result {
+	font-family: "Lucida console", "Arial";
+	color: maroon;
+	font-size: 25px;
+	margin: 1.5em;
 }

@@ -2,36 +2,55 @@
 <html lang="en">
 	
   <head>
+    <!-- Emmanuel 19102016 -->
     <title>Memory Game</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <!-- This is to be kept here to ensure that the script will be rendered first -->
-    <script src="main.js"></script>
     
+    <!-- Navigation -->
     <nav class="clearfix">
       <a href="#">Instructions</a>
       <a href="#">Game</a>
     </nav>
+
+  	<h1>Memory Game</h1>
+  	<h2>Instructions</h2>
+  	<p>
+  		Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are         flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
+  	</p>
     
-    	<h1>Memory Game</h1>
-    	<h2>Instructions</h2>
-    	<p>
-    		Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are         flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
-    	</p>
-    	<button onclick="createCards()">Create cards</button>
-      <!-- To use as ID instead of class name for the div parent -->
-    	<div class="board" id="game-board">
-      <!--
-    		<div class="card"></div>
-    		<div class="card"></div>
-    		<div class="card"></div>
-    		<div class="card"></div>
-      -->
-  	 </div>
-  
+    <!-- Game board and cards -->
+  	<div class="board" id="game-board">
+    <!--
+  		<div class="card"></div>
+  		<div class="card"></div>
+  		<div class="card"></div>
+  		<div class="card"></div>
+    -->
+	 </div>
+   
+   <!-- Added simple scoreboard -->
+   <div class="scoreboard">
+      <div id="gamesplayed"></div>
+      <div id="gameswon"></div>
+      <div id="displayresult" class="result"></div>
+      <div class="buttonsection clearfix">
+        <div style="float: left;">
+          <button type="button" value="replay" onclick="playAgain()">Play Again</button>
+        </div>
+        <div style="float: right;">
+          <button type="button" value="reset" onclick="resetGame()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
   		Created with &hearts; by <span class="name">GA</span>
     </footer>
+
+    <!-- This is to be kept here to ensure that the script will be rendered last to avoid error -->
+    <script src="main.js"></script>
   </body>
 </html>
